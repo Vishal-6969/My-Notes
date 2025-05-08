@@ -8,5 +8,18 @@
   <div id="root"></div>
   <script src="../src/index.js" type="text/jsx"></script>
 
-
+<script> (function(d,t) {
+    var BASE_URL="https://CHANGE.herokuapp.com";
+    var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=BASE_URL+"/packs/js/sdk.js";
+    g.defer = true;
+    g.async = true;
+    s.parentNode.insertBefore(g,s);
+    g.onload=function(){
+      window.chatwootSDK.run({
+        websiteToken: 'ZG9ZP3CjmQZXgg5x56oeu39a',
+        baseUrl: BASE_URL
+      })
+    }
+  })(document,"script");</script>
 <script type="module" src="/src/index.jsx"></script></body>
