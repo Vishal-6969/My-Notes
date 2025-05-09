@@ -9,7 +9,7 @@ function App() {
 
   // ✅ Chatwoot Integration (Self-hosted)
   useEffect(() => {
-    const BASE_URL = "https://my-notes-p430m91xd-vishals-projects-fd3b947e.vercel.app/"; // 🔁 Replace 'CHANGE' with your actual Heroku app name
+    const BASE_URL = "https://my-notes-7hk93d70y-vishals-projects-fd3b947e.vercel.app/"; // 🔁 Replace 'CHANGE' with your actual Heroku app name
     const script = document.createElement("script");
     script.src = `${BASE_URL}/packs/js/sdk.js`;
     script.defer = true;
